@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
-using System.Media;
+>>>>>>>>> Temporary merge branch 2
 
 namespace greetingCard
 {
@@ -122,8 +122,21 @@ namespace greetingCard
 
         private void Form1_Click(object sender, EventArgs e)
         {
-            SoundPlayer clap = new SoundPlayer(Properties.Resources.clap);
-            clap.Play();
+<<<<<<<<< Temporary merge branch 1
+            g.Clear(Color.Black);
+            g.DrawEllipse(silverPen, 550, 20, 40, 40);
+            g.FillEllipse(silverBrush, 550, 20, 40, 40);
+            g.TranslateTransform(555, -15);
+            g.RotateTransform(45);
+            g.DrawEllipse(silverPen, 540, 40, 20, 60);
+            g.FillEllipse(silverBrush, 40, 40, 20, 60);
+            g.ResetTransform();
+            for (int i = 0; i <= 19; i++)
+            {
+                
+            }
+=========
+            
             for (int i = 1; i <= 20; i++)
             {
             g.Clear(Color.Black);
@@ -139,8 +152,8 @@ namespace greetingCard
                 Refresh();
             }
             
-                
-            }
+
+>>>>>>>>> Temporary merge branch 2
         }
     }
-
+}
