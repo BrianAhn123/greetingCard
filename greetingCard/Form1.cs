@@ -14,23 +14,23 @@ namespace greetingCard
 {
     public partial class Form1 : Form
     {
-            Graphics g;
-            Pen darkgoldPen = new Pen(Color.DarkGoldenrod, 10);
-            Pen whitePen = new Pen(Color.White);
-            Pen goldPen = new Pen(Color.Goldenrod);
-            Pen silverPen = new Pen(Color.Silver);
-            SolidBrush silverBrush = new SolidBrush(Color.Silver);
-            SolidBrush goldBrush = new SolidBrush(Color.Goldenrod);
-            SolidBrush darkgoldBrush = new SolidBrush(Color.DarkGoldenrod);
-            Font greeting = new Font("Arial", 20, FontStyle.Bold);
-            public Form1()
+        Graphics g;
+        Pen darkgoldPen = new Pen(Color.DarkGoldenrod, 10);
+        Pen whitePen = new Pen(Color.White);
+        Pen goldPen = new Pen(Color.Goldenrod);
+        Pen silverPen = new Pen(Color.Silver);
+        SolidBrush silverBrush = new SolidBrush(Color.Silver);
+        SolidBrush goldBrush = new SolidBrush(Color.Goldenrod);
+        SolidBrush darkgoldBrush = new SolidBrush(Color.DarkGoldenrod);
+        Font greeting = new Font("Arial", 20, FontStyle.Bold);
+        public Form1()
         {
             InitializeComponent();
             g = this.CreateGraphics();
         }
         private void Form1_Shown(object sender, EventArgs e)
         {
-           
+
 
             g.Clear(Color.Black);
             g.DrawEllipse(goldPen, 280, 20, 30, 170);
@@ -124,23 +124,20 @@ namespace greetingCard
         {
             SoundPlayer clap = new SoundPlayer(Properties.Resources.clap);
             clap.Play();
-            for (int i = 1; i <= 20; i++)
-            {
+
             g.Clear(Color.Black);
             g.DrawEllipse(silverPen, 550, 20, 40, 40);
             g.FillEllipse(silverBrush, 550, 20, 40, 40);
             g.TranslateTransform(555, -15);
             g.RotateTransform(45);
-                g.DrawEllipse(silverPen, 540 - i * 10, 40 + i * 25, 20, 60);
-                g.FillEllipse(silverBrush, 40 - i * 10, 40 + i * 25, 20, 60);
+            g.DrawEllipse(silverPen, 540, 40, 20, 60);
+            g.FillEllipse(silverBrush, 40, 40, 20, 60);
             g.ResetTransform();
-                g.DrawString("20TH ANNIVERSARY!", greeting, silverBrush, 180, 200);
-                Thread.Sleep(200);
-                Refresh();
-            }
-            
-                
+            for (int i = 0; i <= 19; i++)
+            {
+
             }
         }
     }
+}
 
