@@ -124,20 +124,21 @@ namespace greetingCard
             
             for (int i = 1; i <= 20; i++)
             {
-                g.Clear(Color.Black);
-                g.DrawEllipse(silverPen, 550, 20, 40, 40);
-                g.FillEllipse(silverBrush, 550, 20, 40, 40);
-                g.TranslateTransform(555, -15);
-                g.RotateTransform(45);
+            g.Clear(Color.Black);
+            g.DrawEllipse(silverPen, 550, 20, 40, 40);
+            g.FillEllipse(silverBrush, 550, 20, 40, 40);
+            g.TranslateTransform(555, -15);
+            g.RotateTransform(45);
                 g.DrawEllipse(silverPen, 540 - i * 10, 40 + i * 25, 20, 60);
                 g.FillEllipse(silverBrush, 40 - i * 10, 40 + i * 25, 20, 60);
-                g.ResetTransform();
+            g.ResetTransform();
                 g.DrawString("20TH ANNIVERSARY!", greeting, silverBrush, 180, 200);
                 Thread.Sleep(200);
                 Refresh();
             }
             
-
+                
+            }
         }
     }
 }
