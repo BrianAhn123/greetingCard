@@ -155,7 +155,7 @@ namespace greetingCard
                 //first firework shooting up in the sky
                 g.FillRectangle(graybrush, 0, 300, 600, 150);
                 g.FillEllipse(redBrush, 50, 250 - i * 10, 20, 60);
-                g.DrawString("HAPPY 16th ANNIVERSARY", greeting, goldBrush, 100, 200);
+                g.DrawString("HAPPY 16th ANNIVERSARY", greeting, goldBrush, 100, 180);
                 Thread.Sleep(100);
                 Refresh();
             }
@@ -174,7 +174,7 @@ namespace greetingCard
                 g.FillRectangle(darkGrayBrush, 310, 270, 100, 200);
                 g.FillRectangle(darkGrayBrush, 410, 180, 100, 200);
                 g.FillRectangle(graybrush, 0, 300, 600, 150);
-                g.DrawString("HAPPY 16th ANNIVERSARY", greeting, goldBrush, 100, 200);
+                g.DrawString("HAPPY 16th ANNIVERSARY", greeting, goldBrush, 100, 180);
 
 
                 //firework blowing up
@@ -272,7 +272,7 @@ namespace greetingCard
                 //second firework shoots on other side of card
                 g.FillRectangle(graybrush, 0, 300, 600, 150);
                 g.FillEllipse(redBrush, 450, 250 - i * 10, 20, 60);
-                g.DrawString("HAPPY 16th ANNIVERSARY", greeting, goldBrush, 100, 200);
+                g.DrawString("HAPPY 16th ANNIVERSARY", greeting, goldBrush, 100, 180);
                 Thread.Sleep(100);
                 Refresh();
             }
@@ -291,7 +291,7 @@ namespace greetingCard
                 g.FillRectangle(darkGrayBrush, 310, 270, 100, 200);
                 g.FillRectangle(darkGrayBrush, 410, 180, 100, 200);
                 g.FillRectangle(graybrush, 0, 300, 600, 150);
-                g.DrawString("HAPPY 16th ANNIVERSARY", greeting, goldBrush, 100, 200);
+                g.DrawString("HAPPY 16th ANNIVERSARY", greeting, goldBrush, 100, 180);
 
                 //Image firework
                 g.DrawLine(redPen, 500 - i * 10, 200 - i * 10, 500 - i * 10, 10);
@@ -325,7 +325,7 @@ namespace greetingCard
                 g.FillRectangle(darkGrayBrush, 310, 270, 100, 200);
                 g.FillRectangle(darkGrayBrush, 410, 180, 100, 200);
                 g.FillRectangle(graybrush, 0, 300, 600, 150);
-                g.DrawString("CONGRATS ON 16 YEARS", greeting, goldBrush, 70, 200);
+                g.DrawString("CONGRATS ON 16 YEARS", greeting, goldBrush, 70, 180);
 
                 //confetti/Lasers
                 g.DrawLine(redPen, 500 - i * 10, 200 - i * 10, 500, 10);
